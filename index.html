@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DREAM FC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="./logo.jpg">
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .btn{
+      animation: pulse 1.4s linear infinite forwards;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(.9);
+      }
+      50% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes glow {
+      0%, 100% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+      }
+      50% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+      }
+    }
+
+    .animated-name {
+      animation: fadeIn 2s ease, glow 3s infinite;
+    }
+
+    .animated-button {
+      /* background-image: linear-gradient(to right, #4facfe, #00f2fe); */
+      animation: fadeIn 2s ease;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .animated-button:hover {
+      transform: scale(1.1) rotate(2deg);
+      box-shadow: 0 8px 15px rgba(0, 242, 254, 0.5);
+    }
+
+    .countdown-circle {
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body  class="bg-gradient-to-r from-gray-900 via-gray-800 to-black text-white min-h-screen flex flex-col items-center justify-center" style="background-image: url('back.jpg');" >
+  <!-- Hero Section -->
+  <div class="text-center space-y-6 px-4 max-w-screen-md h-screen" style="background-color: rgba(0, 0, 0, 0.767);" >
+    <div class="relative inline-block">
+      <img src="logo.jpg" alt="Profile Logo" class="w-28 h-28 rounded-full shadow-lg transform transition hover:scale-110 hover:rotate-3">
+    </div>
+    <h1 class="text-2xl md:text-5xl font-extrabold uppercase animated-name text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-teal-400 to-green-400">
+      DREAM FC
+    </h1>
+    <p class="text-lg md:text-xl font-medium text-teal-300">😍 Khelo Ab Hamare Sath 😍</p>
+    
+    <!-- Countdown Loader -->
+    <div class="relative w-24 h-24 mx-auto">
+      <div class="absolute inset-0 rounded-full border-t-4 border-teal-400 border-opacity-50 countdown-circle"></div>
+      <div id="countdown" class="absolute inset-0 flex items-center justify-center text-3xl font-bold text-teal-400">
+        30
+      </div>
+    </div>
+
+    <!-- Join Button -->
+    <div class="grid place-items-center">
+      <div class="btn" >
+        <a href="https://t.me/+N4-DzeIq5dQwYzZl" target="_blank">
+          <button class=" rounded animated-button text-lg  text-black font-bold py-4 px-8  flex items-center gap-3 mt-2 border-4 border-black"  style=" background-color: rgb(221, 255, 0); box-shadow: 0px 0px 0px 4px rgb(221, 255, 0);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
+            </svg>
+            JOIN FREE CHANNEL DREAM FC 
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="mt-4 space-y-2 text-center">
+      <ul class="text-lg space-y-1">
+        <!-- <li>BBL 44/43 Pass</li>
+        <li>2024 IPL 74/73 Pass</li>
+        <li>T20 World Cup 55/53 Match Pass</li> -->
+        <li>
+🔥 95% Accuracy In Football ⚽
+</li>
+      </ul>
+      <p class="mt-4 text-sm uppercase font-medium">
+        <span class="text-4xl font-bold text-teal-500 mr-2">99%</span> <span> Right Accuracy</span>
+        <br>
+        <span class="text-lg font-semibold text-white">Football ANYLISIS ki duniya ka badshah 👑 💰</span>
+      </p>
+    </div>
+  </div>
+  <!-- <footer style="position: absolute;bottom: 0; background-color: rgb(255, 255, 255); width: 100%; text-align: center; text-transform: uppercase; z-index:99 !important;  "><a href="https://t.me/digitalranjan24" style="color: black; text-decoration: none;">  Advertisment By <strong style="color: blue; text-decoration:underline; text-transform: none;"> DigitalRanjan </strong></a></footer> -->
+  
+  <script>
+    let timeLeft = 30; // Start at 30 seconds
+    const countdownElement = document.getElementById("countdown");
+
+    setInterval(() => {
+      if (timeLeft > 0) {
+        timeLeft--;
+        countdownElement.textContent = timeLeft;
+      } else {
+        timeLeft = 30;
+      }
+    }, 1000);
+  </script>
+  
+  <script>
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault(); // Prevent the default right-click menu
+    });
+
+    document.addEventListener("keydown", function(event) {
+      // Check if Ctrl key is pressed along with 'U'
+      if (event.ctrlKey && event.key === "u") {
+        event.preventDefault(); // Prevent the default action
+      }
+    });
+
+  
+  </script>
+</body>
+
+</html>
